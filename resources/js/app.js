@@ -1,31 +1,71 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
 
 require('./bootstrap');
 
 window.Vue = require('vue');
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+/** from Tixbee */
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+/* Axios */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+import axios from 'axios';
+window.axios = require('axios');
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+/* JSON to CSV */
+
+import JsonCSV from 'vue-json-csv'
+
+Vue.component('downloadCsv', JsonCSV)
+
+/* Google Charts */
+
+import VueGoogleCharts from 'vue-google-charts'
+Vue.use(VueGoogleCharts);
+
+/* V-Calendar */
+
+import VCalendar from 'v-calendar';
+Vue.use(VCalendar);
+import DatePicker from 'v-calendar/lib/components/date-picker.umd'
+Vue.component('date-picker', DatePicker)
+
+/* DatePicker */
+
+import DateRangePicker from "@gravitano/vue-date-range-picker";
+Vue.use(DateRangePicker);
+
+/* HTML to Paper */
+
+import VueHtmlToPaper from 'vue-html-to-paper';
+const options = {
+    name: '_blank',
+    specs: [
+        'fullscreen=yes',
+        'titlebar=no',
+        'scrollbars=yes'
+    ],
+    styles: [
+        'https://tixbee.com/css/print.css'
+    ]
+}
+Vue.use(VueHtmlToPaper, options);
+
+/* Vuikit */
+
+import Vuikit from 'vuikit'
+import VuikitIcons from '@vuikit/icons'
+Vue.use(Vuikit)
+Vue.use(VuikitIcons)
+
+/* Moment JS */
+
+Vue.use(require('vue-moment'));
+
+/** End of from Tixbee */
+
+
+Vue.component('zips-component', require('./components/Zips.vue').default);
+
+
 
 const app = new Vue({
     el: '#app',
