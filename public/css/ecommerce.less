@@ -1,0 +1,117 @@
+@import "components/_import.less";
+@import "jquery-ui.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/*************/
+/* Variables */
+/*************/
+
+/* Type */
+
+@global-font-family:                            'Open Sans', sans-serif;
+@global-font-size:                              18px; //h5
+@global-line-height:                            2;
+@global-xxlarge-font-size:                      6rem; //h1
+@global-xlarge-font-size:                       4rem; //h2
+@global-large-font-size:                        2rem; //h3
+@global-medium-font-size:                       1rem; //h4
+@global-small-font-size:                        0.8rem; //h6
+
+/* Color */
+
+/* ... */
+
+/* Spacings */
+
+@global-margin:                                 4rem;
+@global-small-margin:                           2rem;
+@global-medium-margin:                          4rem;
+@global-large-margin:                           8rem;
+@global-xlarge-margin:                          12rem;
+@global-gutter:                                 @global-margin;
+@global-small-gutter:                           @global-small-margin;
+@global-medium-gutter:                          @global-medium-margin;
+@global-large-gutter:                           @global-large-margin;
+
+/**********/
+/* UI Kit */
+/**********/
+
+/* ... */
+
+
+/**********/
+/* UI Kit */
+/**********/
+
+/* Form */
+
+@form-padding-horizontal:                       @global-small-margin;
+
+/**********/
+/* Custom */
+/**********/
+
+/* Calendar */
+
+// Wrapper
+
+.ui-datepicker {
+    width: 100%;
+    padding: 0;
+}
+.ui-widget-content {
+    background: none;
+    color: @global-color;
+}
+.ui-widget {
+    font-family: @global-font-family;
+    font-size: @global-font-size;
+}
+
+// Title
+
+.ui-datepicker .ui-datepicker-header {
+    padding: 0;
+}
+.ui-widget-header {
+    background: @global-muted-background;
+    color: @global-color;
+    font-weight: normal;
+}
+.ui-datepicker .ui-datepicker-title {
+    margin: @global-small-margin;
+    line-height: @global-line-height;
+}
+
+// Column headers
+
+.ui-datepicker th {
+    font-weight: normal;
+    padding: @global-small-margin;
+}
+
+// Table
+
+.ui-datepicker table {
+    font-size: @global-font-size;
+    margin: 0;
+}
+.ui-datepicker td {
+    padding: @global-small-font-size;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    padding: @global-small-margin;
+}
+
+// Remove border radius
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-radius: 0;
+}
+
+//Remove borders
+
+.ui-state-default, .ui-widget.ui-widget-content, .ui-widget-header {
+    border: none !important;
+}

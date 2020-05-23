@@ -1,0 +1,194 @@
+@import "components/_import.less";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap');
+
+@global-font-family:                            'Montserrat', sans-serif;
+
+/* Color */
+
+@global-color:                                  #123659;
+@global-emphasis-color:                         #FF6200;
+//@global-muted-color:                            #999;
+@global-link-color:                             @global-emphasis-color;
+@global-link-hover-color:                       darken(@global-emphasis-color, 10%);
+//@global-inverse-color:                          #fff;
+
+@global-background:                             #FAFAFA;
+@global-muted-background:                       #F0F0F0;
+@global-primary-background:                     @global-emphasis-color;
+//@global-secondary-background:                   #222;
+
+//@global-success-background:                     #32d296;
+//@global-warning-background:                     #faa05a;
+@global-danger-background:                      @global-emphasis-color;
+
+html, body {
+	height: 100%;
+}
+
+/**********/
+/* UI Kit */
+/**********/
+
+/* Navbar */
+
+@navbar-background:								@global-color;
+@navbar-toggle-color:                           @global-inverse-color;
+@navbar-toggle-hover-color:                     @global-inverse-color;
+@navbar-nav-item-color:                         @global-inverse-color;
+@navbar-nav-item-hover-color:                   @global-inverse-color;
+@navbar-nav-item-font-size:                     @global-large-font-size;
+.uk-navbar {
+    z-index: 2000;
+}
+
+/* Offcanvas */
+
+.uk-offcanvas {
+    z-index: 3000;
+}
+
+/* Form */
+
+@form-background:                               @global-muted-background;
+@form-focus-background:                         @global-muted-background;
+.uk-input,
+.uk-select,
+.uk-textarea {
+    border-radius: 5px;
+    border: solid 2px @global-muted-background;
+}
+.uk-input:active,
+.uk-input:focus,
+.uk-select:active,
+.uk-select:focus,
+.uk-textarea:active,
+.uk-textarea:focus {
+    background: @global-inverse-color;
+}
+
+/* Button */
+
+.uk-button {
+    font-weight: 600;
+    height: @global-control-height;
+    text-transform: uppercase;
+	transition: 1s ease;
+	border-radius: 5px;
+	-webkit-appearance: none;
+}
+.uk-button-large {
+    height: @global-control-large-height;
+}
+.uk-button-default {
+    background: transparent;
+    border: solid 2px @global-primary-background;
+}
+.uk-button-default:active,
+.uk-button-default:hover,
+.uk-button-default:focus {
+    background: transparent;
+    color: @global-link-hover-color;
+    border: solid 2px @global-link-hover-color;
+}
+
+/* Modal */
+
+.uk-modal {
+    z-index: 4000;
+}
+.uk-modal-dialog {
+    border-radius: 3px;
+}
+.uk-modal-body {
+    @modal-dialog-background: @global-inverse-color;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 0 @global-muted-background;
+}
+
+/* Card */
+
+.uk-card {
+    background: @global-inverse-color;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 0 @global-muted-background;
+}
+
+/**********/
+/* Custom */
+/**********/
+
+/* Loading Overlay */
+
+#loading-overlay {
+    background: @global-inverse-color;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+#dots #dot1{
+    fill: @global-color;
+    animation: load 1s infinite;
+}
+#dots #dot2{
+    fill: @global-color;
+    animation: load 1s infinite;
+    animation-delay: 0.2s;
+}
+#dots #dot3{
+    fill: @global-color;
+    animation: load 1s infinite;
+    animation-delay: 0.4s;
+}
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* POS Buttons */
+
+.item {
+    background: #e2e6ea;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    border: solid 1px @global-color;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-top: @global-margin;
+}
+.inventory {
+    background: @global-muted-background;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    margin-top: @global-margin;
+}
+.inventory-bar {
+    background: @global-color;
+    height: 10px;
+    border-radius: 0 0 0 3px;
+}
+
+/* POS */
+
+.receipt {
+     background: @global-inverse-color;
+     border-left: solid 1px @global-muted-color;
+ }
+
+/***********/
+/* Plugins */
+/***********/
+
+.error {
+    color: @global-emphasis-color;
+}

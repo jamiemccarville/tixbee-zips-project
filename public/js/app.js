@@ -5411,13 +5411,25 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _this.chooseDate = undefined;
                 _this.isLoading = true;
                 _context.next = 7;
-                return axios.post("/api/zips/dates", {
-                  firstDate: _this.firstDate,
-                  secondDate: _this.secondDate
+                return axios({
+                  method: "post",
+                  url: "/api/zips/dates",
+                  data: {
+                    firstDate: _this.firstDate,
+                    secondDate: _this.secondDate
+                  },
+                  proxy: {
+                    host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
+                    port: "80"
+                  }
                 });
 
               case 7:
                 res = _context.sent;
+                // let res = await axios.post("/api/zips/dates", {
+                //   firstDate: this.firstDate,
+                //   secondDate: this.secondDate
+                // });
                 _this.output = res.data;
 
                 if (_this.output.length < 1) {

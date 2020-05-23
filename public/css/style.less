@@ -1,0 +1,248 @@
+@import "components/_import.less";
+@import "/css/animate.css";
+@import "/css/all.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap');
+
+/*************/
+/* Variables */
+/*************/
+
+/* Type */
+
+@global-font-family:                            'Open Sans', sans-serif;
+@global-font-size:                              18px; //h5
+@global-line-height:                            2;
+@global-xxlarge-font-size:                      6rem; //h1
+@global-xlarge-font-size:                       4rem; //h2
+@global-large-font-size:                        2rem; //h3
+@global-medium-font-size:                       1rem; //h4
+@global-small-font-size:                        0.8rem; //h6
+
+/* Color */
+
+@global-emphasis-color:                         #FF6200;
+@global-link-color:                             #86FF82;
+@global-link-hover-color:                       #4CB048;
+
+@global-primary-background:                     @global-emphasis-color;
+@global-secondary-background:                   #0091FF;
+
+@global-danger-background:                      @global-emphasis-color;
+@global-warning-background:                     @global-emphasis-color;
+
+@global-black:                                   #333;
+
+/* Spacings */
+
+@global-margin:                                 4rem;
+@global-small-margin:                           2rem;
+@global-medium-margin:                          4rem;
+@global-large-margin:                           8rem;
+@global-xlarge-margin:                          12rem;
+@global-gutter:                                 @global-margin;
+@global-small-gutter:                           @global-small-margin;
+@global-medium-gutter:                          @global-medium-margin;
+@global-large-gutter:                           @global-large-margin;
+
+/**********/
+/* UI Kit */
+/**********/
+
+/* Text */
+
+h1, .uk-h1 {
+	font-family: 'Archivo Black', sans-serif;
+	line-height: 1;
+	letter-spacing: 2px;
+}
+.uk-text-lead {
+	font-family: 'Archivo Narrow', sans-serif;
+	line-height: 1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+}
+@media (max-width: 960px) {
+	h1, .uk-h1 {
+		font-size: calc(@global-xxlarge-font-size / 2);
+	}
+    h2, .uk-h2 {
+        font-size: calc(@global-xlarge-font-size / 2);
+    }
+	.uk-text-large {
+		font-size: @global-font-size;
+	}
+}
+blockquote {
+	margin-left: @global-margin;
+}
+@media (min-width: 1200px) {
+	blockquote {
+		font-size: @global-large-font-size;
+		margin-left: @global-xlarge-margin;
+	}
+}
+.uk-text-danger {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, @global-link-color 50%);
+    display: inline;
+}
+@list-margin-top:                               0;
+
+/* Heading */
+
+.uk-heading-2xlarge {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Link */
+
+a {
+	transition: color @animation-duration;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* Container */
+
+@container-padding-horizontal:          2rem;
+
+/* Navbar */
+
+@navbar-background:                             @global-primary-background;
+@navbar-nav-item-color:                         @global-link-color;
+@navbar-nav-item-hover-color:                   @global-link-hover-color;
+@navbar-nav-item-height:                        64px;
+@navbar-nav-item-padding-horizontal:            1rem;
+.uk-navbar-container {
+	transition: background 2s ease;
+}
+.uk-logo {
+	color: @global-link-color;
+}
+.uk-logo:hover {
+	color: @global-link-hover-color;
+}
+
+/* Section */
+
+.uk-section-primary,
+.uk-background-primary {
+	background-image: linear-gradient(to right top, @global-emphasis-color, lighten(@global-emphasis-color, 25));
+}
+@section-padding-vertical:                        @global-large-margin;
+@section-padding-vertical-m:                      @global-xlarge-margin;
+@section-xsmall-padding-vertical:                 @global-small-margin;
+.uk-section-xsmall {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.uk-section-secondary:not(.uk-preserve-color) .uk-h1, .uk-section-secondary:not(.uk-preserve-color) h2,
+.uk-section-secondary:not(.uk-preserve-color) .uk-h1, .uk-section-secondary:not(.uk-preserve-color) .uk-h2 {
+    color: @global-link-color;
+}
+
+/* Form */
+
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.uk-input {
+    border-radius: 5px;
+}
+
+/* Button */
+
+.uk-button {
+    text-transform: uppercase;
+    position:relative;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 0 @global-black;
+    -webkit-appearance: none;
+}
+.uk-button:active {
+    top:3px;
+    box-shadow: 0 2px 0 0 @global-black;
+}
+.uk-button-primary {
+    background-color: @global-link-color !important;
+    color: @global-black !important;
+}
+.uk-button-secondary {
+    background-color: @global-emphasis-color !important;
+    color: @global-link-color !important;
+}
+
+/* Offcanvas */
+
+@offcanvas-bar-padding-vertical:                @global-small-margin;
+@offcanvas-bar-padding-horizontal:              @global-small-margin;
+
+/* Modal */
+
+.uk-modal-dialog {
+	border-radius: 25px;
+}
+
+/**********/
+/* Custom */
+/**********/
+
+/* Links */
+
+a.link {
+    background: @global-black;
+}
+
+/* Black */
+
+.black-section {
+    background-image: linear-gradient(to right top, @global-black, darken(@global-black, 25));
+}
+.black-background {
+    background: @global-black;
+}
+.black-color {
+    color: @global-black;
+}
+
+/* Call to Action */
+
+.action {
+    padding: 0 0 @global-xlarge-margin;
+    margin-top: @global-large-margin;
+}
+.action-message {
+    background: @global-black;
+    position: relative;
+    margin-top: -@global-large-margin;
+}
+
+/* Journal */
+
+.card-body {
+    position: relative;
+    margin-top: calc(-@global-large-margin + @global-medium-gutter);
+}
+.card-title {
+    background: @global-secondary-background;
+    padding: 0.5rem;
+    margin-bottom: @global-large-margin;
+}
+.post-body {
+    position: relative;
+    margin-top: calc(-@global-large-margin * 2);
+}
+.post-body h1.highlighted {
+    background: @global-secondary-background;
+    color: @global-inverse-color;
+    padding: 0.5rem;
+    margin-bottom: @global-large-margin;
+}
+.link-secondary {
+    color: @global-emphasis-color;
+}
