@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/api/zips/dates', 'ZipsController@dates');
+Route::post('/zips/dates', 'ZipsController@dates');

@@ -5413,14 +5413,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _context.next = 7;
                 return axios({
                   method: "post",
-                  url: "/api/zips/dates",
-                  data: {
-                    firstDate: _this.firstDate,
-                    secondDate: _this.secondDate
-                  },
+                  url: "/zips/dates",
                   proxy: {
                     host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
                     port: "80"
+                  },
+                  data: {
+                    firstDate: _this.firstDate,
+                    secondDate: _this.secondDate
                   }
                 });
 

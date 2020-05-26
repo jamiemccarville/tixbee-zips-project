@@ -122,14 +122,14 @@ export default {
       this.isLoading = true;
       let res = await axios({
         method: "post",
-        url: "/api/zips/dates",
-        data: {
-          firstDate: this.firstDate,
-          secondDate: this.secondDate
-        },
+        url: "/zips/dates",
         proxy: {
           host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
           port: "80"
+        },
+        data: {
+          firstDate: this.firstDate,
+          secondDate: this.secondDate
         }
       });
       // let res = await axios.post("/api/zips/dates", {
