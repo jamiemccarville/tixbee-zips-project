@@ -5414,6 +5414,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 return axios({
                   method: "post",
                   url: "/zips/dates",
+                  proxy: {
+                    host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
+                    port: "80"
+                  },
                   data: {
                     firstDate: _this.firstDate,
                     secondDate: _this.secondDate
@@ -5422,12 +5426,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 7:
                 res = _context.sent;
-
                 // let res = await axios.post("/api/zips/dates", {
                 //   firstDate: this.firstDate,
                 //   secondDate: this.secondDate
                 // });
-                // this.output = res.data;
+                _this.output = res.data;
+
                 if (_this.output.length < 1) {
                   _this.noData = true;
                 }
@@ -5440,7 +5444,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 _this.isLoading = false;
 
-              case 11:
+              case 12:
               case "end":
                 return _context.stop();
             }
