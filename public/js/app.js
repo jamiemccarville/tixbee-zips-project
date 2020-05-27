@@ -5409,27 +5409,27 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 3:
                 _this.chooseDate = undefined;
-                _this.isLoading = true;
+                _this.isLoading = true; // let res = await axios({
+                //   method: "post",
+                //   url: "/zips/dates",
+                //   proxy: {
+                //     host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
+                //     port: "80"
+                //   },
+                //   data: {
+                //     firstDate: this.firstDate,
+                //     secondDate: this.secondDate
+                //   }
+                // });
+
                 _context.next = 7;
-                return axios({
-                  method: "post",
-                  url: "/zips/dates",
-                  proxy: {
-                    host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
-                    port: "80"
-                  },
-                  data: {
-                    firstDate: _this.firstDate,
-                    secondDate: _this.secondDate
-                  }
+                return axios.post("/api/zips/dates", {
+                  firstDate: _this.firstDate,
+                  secondDate: _this.secondDate
                 });
 
               case 7:
                 res = _context.sent;
-                // let res = await axios.post("/api/zips/dates", {
-                //   firstDate: this.firstDate,
-                //   secondDate: this.secondDate
-                // });
                 _this.output = res.data;
 
                 if (_this.output.length < 1) {

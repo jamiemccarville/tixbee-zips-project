@@ -120,22 +120,22 @@ export default {
       }
       this.chooseDate = undefined;
       this.isLoading = true;
-      let res = await axios({
-        method: "post",
-        url: "/zips/dates",
-        proxy: {
-          host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
-          port: "80"
-        },
-        data: {
-          firstDate: this.firstDate,
-          secondDate: this.secondDate
-        }
-      });
-      // let res = await axios.post("/api/zips/dates", {
-      //   firstDate: this.firstDate,
-      //   secondDate: this.secondDate
+      // let res = await axios({
+      //   method: "post",
+      //   url: "/zips/dates",
+      //   proxy: {
+      //     host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
+      //     port: "80"
+      //   },
+      //   data: {
+      //     firstDate: this.firstDate,
+      //     secondDate: this.secondDate
+      //   }
       // });
+      let res = await axios.post("/api/zips/dates", {
+        firstDate: this.firstDate,
+        secondDate: this.secondDate
+      });
       this.output = res.data;
 
       if (this.output.length < 1) {
