@@ -5409,29 +5409,25 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 3:
                 _this.chooseDate = undefined;
-                _this.isLoading = true; // let res = await axios({
-                //   method: "post",
-                //   url: "/zips/dates",
-                //   proxy: {
-                //     host: "http://fixie:6avnVjdIdvIsIjg@velodrome.usefixie.com",
-                //     port: "80"
-                //   },
-                //   data: {
-                //     firstDate: this.firstDate,
-                //     secondDate: this.secondDate
-                //   }
-                // });
-
+                _this.isLoading = true;
                 _context.next = 7;
-                return axios.post("/api/zips/dates", {
-                  firstDate: _this.firstDate,
-                  secondDate: _this.secondDate
+                return axios({
+                  method: "post",
+                  url: "/zips/dates",
+                  data: {
+                    firstDate: _this.firstDate,
+                    secondDate: _this.secondDate
+                  }
                 });
 
               case 7:
                 res = _context.sent;
-                _this.output = res.data;
 
+                // let res = await axios.post("/api/zips/dates", {
+                //   firstDate: this.firstDate,
+                //   secondDate: this.secondDate
+                // });
+                // this.output = res.data;
                 if (_this.output.length < 1) {
                   _this.noData = true;
                 }
@@ -5444,7 +5440,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 _this.isLoading = false;
 
-              case 12:
+              case 11:
               case "end":
                 return _context.stop();
             }
