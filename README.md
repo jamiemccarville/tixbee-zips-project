@@ -40,15 +40,13 @@ When a user selects a date range, the dates selected should be used to generate 
 
   - if there is data, call the chart building function to generate the charts
 
-- pulled in Google charts component to display the graphs
+- pulled in Google charts components
 
   - the charts require the information to be formatted in a specific way, so I used computed properties to manipulate the response data into the format required for the charts.
 
-There should be 3 charts displayed on the screen.
-
 #### Laravel
 
-- create a route in web.php that handles the axios call and fires a method in ZipsController.php
+- created a route in web.php that handles the axios call and fires a method (dates) in ZipsController.php
 
 - the dates method receives the start and end dates and assigns them to variables.  These variables are used to make the database query, with the start and end of day times added accordingly.  
   
@@ -56,7 +54,7 @@ There should be 3 charts displayed on the screen.
 
 #### Heroku
 
-I used Heroku to host the app.  We used dummy data to populate the zips table in the database.  I exported the table from the database we used for the project and imported it to my own Google Cloud SQL database. I used it for local development while putting the app together.
+I used Heroku to host the app.  We used dummy data to populate the zips table in the database.  I exported the table from the database we used for the project and imported it to my own Google Cloud SQL database which I used for local development while putting the app together.
   
 Once I created the Heroku app, it was easier to add a Heroku Postgres database to the app than to connect to the Google SQL database.  When I added the Heroku database, the DATABASE_URL config var was added automatically to my HEROKU app.  I just had to go into database.php and change the default to pgsql.  Once that change was made, I was able to connect to the database.
 
