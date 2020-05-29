@@ -5260,6 +5260,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var vue_github_corners__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-github-corners */ "./node_modules/vue-github-corners/index.js");
+/* harmony import */ var vue_github_corners__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_github_corners__WEBPACK_IMPORTED_MODULE_2__);
 
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -5386,10 +5388,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    GithubCorner: vue_github_corners__WEBPACK_IMPORTED_MODULE_2___default.a
+  },
   data: function data() {
     return {
+      flipOnHover: true,
       isLoading: false,
       range: undefined,
       output: [],
@@ -10026,6 +10037,25 @@ exports.push([module.i, ".daterangepicker {\r\n  position: absolute;\r\n  color:
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#github-corner .octo-arm {\n  transform-origin: 130px 106px\n}\n#github-corner:hover .octo-arm {\n  -webkit-animation: octocat-wave 560ms ease-in-out;\n          animation: octocat-wave 560ms ease-in-out;\n}\n@-webkit-keyframes octocat-wave {\n0% { transform: rotate(0deg);\n}\n20% { transform: rotate(-25deg);\n}\n40% { transform: rotate(10deg);\n}\n60% { transform: rotate(-25deg);\n}\n80% { transform: rotate(10deg);\n}\n100% { transform: rotate(0deg);\n}\n}\n@keyframes octocat-wave {\n0% { transform: rotate(0deg);\n}\n20% { transform: rotate(-25deg);\n}\n40% { transform: rotate(10deg);\n}\n60% { transform: rotate(-25deg);\n}\n80% { transform: rotate(10deg);\n}\n100% { transform: rotate(0deg);\n}\n}\n#github-corner-svg {\n  color: #fff;\n  position: absolute;\n  top: 0;\n  border: 0;\n}\n#github-corner-svg, #github-corner-svg .octo-arm, #github-corner-svg .octo-body {\n    transition: fill 1s ease;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css& ***!
@@ -10038,7 +10068,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.github-corner:hover .octo-arm[data-v-c60f0946] {\n  -webkit-animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n          animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n}\n@-webkit-keyframes octocat-wave-data-v-c60f0946 {\n0%,\n  100% {\n    transform: rotate(0);\n}\n20%,\n  60% {\n    transform: rotate(-25deg);\n}\n40%,\n  80% {\n    transform: rotate(10deg);\n}\n}\n@keyframes octocat-wave-data-v-c60f0946 {\n0%,\n  100% {\n    transform: rotate(0);\n}\n20%,\n  60% {\n    transform: rotate(-25deg);\n}\n40%,\n  80% {\n    transform: rotate(10deg);\n}\n}\n@media (max-width: 500px) {\n.github-corner:hover .octo-arm[data-v-c60f0946] {\n    -webkit-animation: none;\n            animation: none;\n}\n.github-corner .octo-arm[data-v-c60f0946] {\n    -webkit-animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n            animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n}\n}\n", ""]);
+exports.push([module.i, "\n.github-corner[data-v-c60f0946] {\n  position: absolute;\n  top: 0;\n  border: 0;\n  right: 0;\n}\n.github-corner:hover .octo-arm[data-v-c60f0946] {\n  -webkit-animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n          animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n}\n@-webkit-keyframes octocat-wave-data-v-c60f0946 {\n0%,\n  100% {\n    transform: rotate(0);\n}\n20%,\n  60% {\n    transform: rotate(-25deg);\n}\n40%,\n  80% {\n    transform: rotate(10deg);\n}\n}\n@keyframes octocat-wave-data-v-c60f0946 {\n0%,\n  100% {\n    transform: rotate(0);\n}\n20%,\n  60% {\n    transform: rotate(-25deg);\n}\n40%,\n  80% {\n    transform: rotate(10deg);\n}\n}\n@media (max-width: 500px) {\n.github-corner:hover .octo-arm[data-v-c60f0946] {\n    -webkit-animation: none;\n            animation: none;\n}\n.github-corner .octo-arm[data-v-c60f0946] {\n    -webkit-animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n            animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n}\n}\n", ""]);
 
 // exports
 
@@ -64536,6 +64566,36 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/src??ref--6-2!../../vue-loader/lib??vue-loader-options!./GithubCorner.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css&":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css& ***!
@@ -87745,6 +87805,104 @@ var r="undefined"!==typeof window&&"undefined"!==typeof document,o=["Edge","Trid
 
 /***/ }),
 
+/***/ "./node_modules/vue-github-corners/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/vue-github-corners/index.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./src/GithubCorner.vue */ "./node_modules/vue-github-corners/src/GithubCorner.vue")
+
+/***/ }),
+
+/***/ "./node_modules/vue-github-corners/src/GithubCorner.vue":
+/*!**************************************************************!*\
+  !*** ./node_modules/vue-github-corners/src/GithubCorner.vue ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _GithubCorner_vue_vue_type_template_id_53a95140___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GithubCorner.vue?vue&type=template&id=53a95140& */ "./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=template&id=53a95140&");
+/* harmony import */ var _GithubCorner_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GithubCorner.vue?vue&type=script&lang=js& */ "./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _GithubCorner_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GithubCorner.vue?vue&type=style&index=0&lang=css& */ "./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _GithubCorner_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _GithubCorner_vue_vue_type_template_id_53a95140___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _GithubCorner_vue_vue_type_template_id_53a95140___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/vue-github-corners/src/GithubCorner.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib??vue-loader-options!./GithubCorner.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css&":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css& ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_loader_index_js_css_loader_index_js_ref_6_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_2_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../style-loader!../../css-loader??ref--6-1!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/src??ref--6-2!../../vue-loader/lib??vue-loader-options!./GithubCorner.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _style_loader_index_js_css_loader_index_js_ref_6_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_2_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_index_js_css_loader_index_js_ref_6_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_2_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _style_loader_index_js_css_loader_index_js_ref_6_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_2_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _style_loader_index_js_css_loader_index_js_ref_6_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_2_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_style_loader_index_js_css_loader_index_js_ref_6_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_src_index_js_ref_6_2_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=template&id=53a95140&":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=template&id=53a95140& ***!
+  \*********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_template_id_53a95140___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib??vue-loader-options!./GithubCorner.vue?vue&type=template&id=53a95140& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=template&id=53a95140&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_template_id_53a95140___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_GithubCorner_vue_vue_type_template_id_53a95140___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-google-charts/dist/vue-google-charts.common.js":
 /*!*************************************************************************!*\
   !*** ./node_modules/vue-google-charts/dist/vue-google-charts.common.js ***!
@@ -93744,6 +93902,118 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'GithubCorner',
+  props: {
+    url: {
+      type: String,
+      default: '/'
+    },
+    size: {
+      type: Number,
+      default: 80
+    },
+    colorScheme: {
+      type: String,
+      default: 'auto'
+    },
+    cornerColor: {
+      type: String, 
+      default: '#625D5D'
+    },
+    gitColor: {
+      type: String,
+      default: 'PeachPuff'
+    },
+    leftCorner: {
+      type: Boolean,
+      default: false
+    },
+    flipOnHover: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data () {
+    return {
+      svgStyle: {
+        fill: this.cornerColor,
+        right: (this.leftCorner ? 'auto' : '0'),
+        left: (this.leftCorner ? '0' : 'auto'),
+        transform: (this.leftCorner ? 'scale(-1, 1)' : 'none')
+      },
+      gitStyle: {
+        fill: this.gitColor
+      },
+      flipped: false,
+      svgPath1: 'M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z',
+      svgPath2: 'M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2',
+      svgPath3: 'M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z'
+    }
+  },
+  methods: {
+    flipColor: function() {
+      if (this.flipOnHover) {
+        let holdSvgFill = this.svgStyle.fill
+        this.svgStyle.fill = this.gitStyle.fill
+        this.gitStyle.fill = holdSvgFill
+      }
+    }
+  },
+  beforeMount: function() {
+    if (this.colorScheme != 'auto') {
+      let sch = this.colorScheme
+      this.gitStyle.fill = '#fff'
+
+      if (sch.toLowerCase() == 'black') {
+        this.svgStyle.fill = '#151513'
+      } 
+      if (sch.toLowerCase() == 'green') {
+        this.svgStyle.fill = '#64CEAA'
+      }
+      if (sch.toLowerCase() == 'red') {
+        this.svgStyle.fill = '#FD6C6C'
+      }
+      if (sch.toLowerCase() == 'blue') {
+        this.svgStyle.fill = '#70B7FD'
+      }
+      if (sch.toLowerCase() == 'white') {
+        this.svgStyle.fill = '#fff'
+        this.gitStyle.fill = '#151513'
+      }
+    }
+  }
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/@gravitano/vue-date-range-picker/src/components/DateRangePicker.vue?vue&type=template&id=a731c2ee&":
 /*!*******************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/@gravitano/vue-date-range-picker/src/components/DateRangePicker.vue?vue&type=template&id=a731c2ee& ***!
@@ -93768,6 +94038,74 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=template&id=53a95140&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/vue-github-corners/src/GithubCorner.vue?vue&type=template&id=53a95140& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "vue-github-corner" } }, [
+    _c(
+      "a",
+      {
+        attrs: {
+          href: _vm.url,
+          id: "github-corner",
+          "aria-label": "View source on Github"
+        }
+      },
+      [
+        _c(
+          "svg",
+          {
+            style: _vm.svgStyle,
+            attrs: {
+              id: "github-corner-svg",
+              "aria-hidden": "true",
+              viewBox: "0 0 250 250",
+              width: _vm.size,
+              height: _vm.size
+            }
+          },
+          [
+            _c("path", {
+              attrs: { d: _vm.svgPath1 },
+              on: { mouseenter: _vm.flipColor, mouseleave: _vm.flipColor }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              staticClass: "octo-arm",
+              style: _vm.gitStyle,
+              attrs: { d: _vm.svgPath2 }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              staticClass: "octo-body",
+              style: _vm.gitStyle,
+              attrs: { d: _vm.svgPath3 }
+            })
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&scoped=true&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&scoped=true& ***!
@@ -93783,270 +94121,227 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", [
-      _c(
-        "a",
-        {
-          staticClass: "github-corner",
-          attrs: {
-            href: "https://github.com/jamiemccarville/tixbee-zips-project",
-            "aria-label": "View source on GitHub"
-          }
-        },
-        [
-          _c(
-            "svg",
+  return _c(
+    "div",
+    [
+      _c("GithubCorner", {
+        attrs: {
+          url: "https://github.com/jamiemccarville/tixbee-zips-project",
+          cornerColor: "#fff",
+          gitColor: "ff6200",
+          flipOnHover: _vm.flipOnHover
+        }
+      }),
+      _vm._v(" "),
+      _vm.isLoading
+        ? _c(
+            "div",
             {
-              staticStyle: {
-                fill: "#fff",
-                color: "#ff6200",
-                position: "absolute",
-                top: "0",
-                border: "0",
-                right: "0"
-              },
-              attrs: {
-                width: "80",
-                height: "80",
-                viewBox: "0 0 250 250",
-                "aria-hidden": "true"
-              }
+              staticClass: "uk-flex uk-flex-center uk-flex-middle",
+              attrs: { id: "loading-overlay" }
             },
             [
-              _c("path", {
-                attrs: {
-                  d: "M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"
-                }
-              }),
-              _vm._v(" "),
-              _c("path", {
-                staticClass: "octo-arm",
-                staticStyle: { "transform-origin": "130px 106px" },
-                attrs: {
-                  d:
-                    "M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2",
-                  fill: "currentColor"
-                }
-              }),
-              _vm._v(" "),
-              _c("path", {
-                staticClass: "octo-body",
-                attrs: {
-                  d:
-                    "M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z",
-                  fill: "currentColor"
-                }
-              })
-            ]
-          )
-        ]
-      )
-    ]),
-    _vm._v(" "),
-    _vm.isLoading
-      ? _c(
-          "div",
-          {
-            staticClass: "uk-flex uk-flex-center uk-flex-middle",
-            attrs: { id: "loading-overlay" }
-          },
-          [
-            _c("svg", { attrs: { height: "20", width: "80", id: "dots" } }, [
-              _c("circle", {
-                attrs: { cx: "10", cy: "10", r: "10", id: "dot1" }
-              }),
-              _vm._v(" "),
-              _c("circle", {
-                attrs: { cx: "40", cy: "10", r: "10", id: "dot2" }
-              }),
-              _vm._v(" "),
-              _c("circle", {
-                attrs: { cx: "70", cy: "10", r: "10", id: "dot3" }
-              })
-            ])
-          ]
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _c("div", { staticClass: "uk-container uk-container-large" }, [
-      _c(
-        "div",
-        { staticClass: "uk-section uk-section-small" },
-        [
-          _c(
-            "vk-grid",
-            { staticClass: "uk-flex-middle uk-margin-medium-bottom" },
-            [
-              _c("div", { staticClass: "uk-width-auto" }, [
-                _c("h1", [_vm._v("Zip Code Report")])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "uk-width-expand uk-flex uk-flex-middle" },
-                [
-                  _c("div", { staticClass: "uk-margin-small-right" }, [
-                    _vm._v("Select Date Range:")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "uk-width-1-3" },
-                    [
-                      _c("date-range-picker", {
-                        staticClass: "uk-input uk-width-expand pointer",
-                        attrs: { options: _vm.options },
-                        model: {
-                          value: _vm.range,
-                          callback: function($$v) {
-                            _vm.range = $$v
-                          },
-                          expression: "range"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "uk-button uk-button-default uk-margin-medium-left",
-                        attrs: { type: "button" },
-                        on: { click: _vm.datesPicked }
-                      },
-                      [_vm._v("Generate Charts")]
-                    )
-                  ])
-                ]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "vk-card",
-            { staticClass: "uk-margin-medium-bottom" },
-            [
-              _c(
-                "vk-grid",
-                { staticClass: "uk-child-width-1-1 uk-height-large" },
-                [
-                  _c(
-                    "div",
-                    [
-                      _vm.noData
-                        ? _c(
-                            "div",
-                            {
-                              staticClass:
-                                "uk-margin-auto uk-width-1-2 uk-text-center"
-                            },
-                            [
-                              _c("strong", [
-                                _vm._v("THERE ARE NO ZIPS FOR THIS DATE RANGE")
-                              ])
-                            ]
-                          )
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _vm.chooseDate
-                        ? _c(
-                            "div",
-                            {
-                              staticClass:
-                                "uk-margin-auto uk-width-2-3 uk-text-center"
-                            },
-                            [
-                              _c(
-                                "span",
-                                { staticClass: "uk-label uk-label-warning" },
-                                [_vm._v("WARNING")]
-                              ),
-                              _vm._v(" "),
-                              _c("strong", [
-                                _vm._v(
-                                  "PLEASE CHOOSE A DATE RANGE BEFORE GENERATING A CHART"
-                                )
-                              ])
-                            ]
-                          )
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _c(
-                        "vk-grid",
-                        { staticClass: "uk-child-width-1-2 uk-height-large" },
-                        [
-                          _vm.chartData1
-                            ? _c("GChart", {
-                                attrs: {
-                                  type: "PieChart",
-                                  data: _vm.chartData1,
-                                  options: _vm.chartOptions1
-                                }
-                              })
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _vm.chartData2
-                            ? _c("GChart", {
-                                attrs: {
-                                  type: "PieChart",
-                                  data: _vm.chartData2,
-                                  options: _vm.chartOptions2
-                                }
-                              })
-                            : _vm._e()
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ]
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "vk-card",
-            [
-              _c(
-                "vk-grid",
-                {
-                  staticClass: "uk-child-width-1-1",
-                  attrs: { gutter: "small", divided: "" }
-                },
-                _vm._l(_vm.chartData3, function(item) {
-                  return _c(
-                    "vk-grid",
-                    {
-                      key: item.id,
-                      staticClass:
-                        "uk-child-width-1-4 uk-flex-center uk-text-center",
-                      attrs: { gutter: "collapse" }
-                    },
-                    [
-                      item ? _c("div", [_vm._v(_vm._s(item[0]))]) : _vm._e(),
-                      _vm._v(" "),
-                      _c("div", [_vm._v(_vm._s(item[1]))]),
-                      _vm._v(" "),
-                      _c("div", [_vm._v(_vm._s(_vm.toPercent(item[1])) + "%")])
-                    ]
-                  )
+              _c("svg", { attrs: { height: "20", width: "80", id: "dots" } }, [
+                _c("circle", {
+                  attrs: { cx: "10", cy: "10", r: "10", id: "dot1" }
                 }),
-                1
-              )
-            ],
-            1
+                _vm._v(" "),
+                _c("circle", {
+                  attrs: { cx: "40", cy: "10", r: "10", id: "dot2" }
+                }),
+                _vm._v(" "),
+                _c("circle", {
+                  attrs: { cx: "70", cy: "10", r: "10", id: "dot3" }
+                })
+              ])
+            ]
           )
-        ],
-        1
-      )
-    ])
-  ])
+        : _vm._e(),
+      _vm._v(" "),
+      _c("div", { staticClass: "uk-container uk-container-large" }, [
+        _c(
+          "div",
+          { staticClass: "uk-section uk-section-small" },
+          [
+            _c(
+              "vk-grid",
+              { staticClass: "uk-flex-middle uk-margin-medium-bottom" },
+              [
+                _c("div", { staticClass: "uk-width-auto" }, [
+                  _c("h1", [_vm._v("Zip Code Report")])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "uk-width-expand uk-flex uk-flex-middle" },
+                  [
+                    _c("div", { staticClass: "uk-margin-small-right" }, [
+                      _vm._v("Select Date Range:")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "uk-width-1-3" },
+                      [
+                        _c("date-range-picker", {
+                          staticClass: "uk-input uk-width-expand pointer",
+                          attrs: { options: _vm.options },
+                          model: {
+                            value: _vm.range,
+                            callback: function($$v) {
+                              _vm.range = $$v
+                            },
+                            expression: "range"
+                          }
+                        })
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("div", [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "uk-button uk-button-default uk-margin-medium-left",
+                          attrs: { type: "button" },
+                          on: { click: _vm.datesPicked }
+                        },
+                        [_vm._v("Generate Charts")]
+                      )
+                    ])
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "vk-card",
+              { staticClass: "uk-margin-medium-bottom" },
+              [
+                _c(
+                  "vk-grid",
+                  { staticClass: "uk-child-width-1-1 uk-height-large" },
+                  [
+                    _c(
+                      "div",
+                      [
+                        _vm.noData
+                          ? _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "uk-margin-auto uk-width-1-2 uk-text-center"
+                              },
+                              [
+                                _c("strong", [
+                                  _vm._v(
+                                    "THERE ARE NO ZIPS FOR THIS DATE RANGE"
+                                  )
+                                ])
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _vm.chooseDate
+                          ? _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "uk-margin-auto uk-width-2-3 uk-text-center"
+                              },
+                              [
+                                _c(
+                                  "span",
+                                  { staticClass: "uk-label uk-label-warning" },
+                                  [_vm._v("WARNING")]
+                                ),
+                                _vm._v(" "),
+                                _c("strong", [
+                                  _vm._v(
+                                    "PLEASE CHOOSE A DATE RANGE BEFORE GENERATING A CHART"
+                                  )
+                                ])
+                              ]
+                            )
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c(
+                          "vk-grid",
+                          { staticClass: "uk-child-width-1-2 uk-height-large" },
+                          [
+                            _vm.chartData1
+                              ? _c("GChart", {
+                                  attrs: {
+                                    type: "PieChart",
+                                    data: _vm.chartData1,
+                                    options: _vm.chartOptions1
+                                  }
+                                })
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _vm.chartData2
+                              ? _c("GChart", {
+                                  attrs: {
+                                    type: "PieChart",
+                                    data: _vm.chartData2,
+                                    options: _vm.chartOptions2
+                                  }
+                                })
+                              : _vm._e()
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "vk-card",
+              [
+                _c(
+                  "vk-grid",
+                  {
+                    staticClass: "uk-child-width-1-1",
+                    attrs: { gutter: "small", divided: "" }
+                  },
+                  _vm._l(_vm.chartData3, function(item) {
+                    return _c(
+                      "vk-grid",
+                      {
+                        key: item.id,
+                        staticClass:
+                          "uk-child-width-1-4 uk-flex-center uk-text-center",
+                        attrs: { gutter: "collapse" }
+                      },
+                      [
+                        item ? _c("div", [_vm._v(_vm._s(item[0]))]) : _vm._e(),
+                        _vm._v(" "),
+                        _c("div", [_vm._v(_vm._s(item[1]))]),
+                        _vm._v(" "),
+                        _c("div", [
+                          _vm._v(_vm._s(_vm.toPercent(item[1])) + "%")
+                        ])
+                      ]
+                    )
+                  }),
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ])
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
