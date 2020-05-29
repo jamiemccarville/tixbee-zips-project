@@ -5357,6 +5357,32 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -9991,6 +10017,25 @@ exports = module.exports = __webpack_require__(/*! ../css-loader/lib/css-base.js
 
 // module
 exports.push([module.i, ".daterangepicker {\r\n  position: absolute;\r\n  color: inherit;\r\n  background-color: #fff;\r\n  border-radius: 4px;\r\n  border: 1px solid #ddd;\r\n  width: 278px;\r\n  max-width: none;\r\n  padding: 0;\r\n  margin-top: 7px;\r\n  top: 100px;\r\n  left: 20px;\r\n  z-index: 3001;\r\n  display: none;\r\n  font-family: arial;\r\n  font-size: 15px;\r\n  line-height: 1em;\r\n}\r\n\r\n.daterangepicker:before, .daterangepicker:after {\r\n  position: absolute;\r\n  display: inline-block;\r\n  border-bottom-color: rgba(0, 0, 0, 0.2);\r\n  content: '';\r\n}\r\n\r\n.daterangepicker:before {\r\n  top: -7px;\r\n  border-right: 7px solid transparent;\r\n  border-left: 7px solid transparent;\r\n  border-bottom: 7px solid #ccc;\r\n}\r\n\r\n.daterangepicker:after {\r\n  top: -6px;\r\n  border-right: 6px solid transparent;\r\n  border-bottom: 6px solid #fff;\r\n  border-left: 6px solid transparent;\r\n}\r\n\r\n.daterangepicker.opensleft:before {\r\n  right: 9px;\r\n}\r\n\r\n.daterangepicker.opensleft:after {\r\n  right: 10px;\r\n}\r\n\r\n.daterangepicker.openscenter:before {\r\n  left: 0;\r\n  right: 0;\r\n  width: 0;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.daterangepicker.openscenter:after {\r\n  left: 0;\r\n  right: 0;\r\n  width: 0;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.daterangepicker.opensright:before {\r\n  left: 9px;\r\n}\r\n\r\n.daterangepicker.opensright:after {\r\n  left: 10px;\r\n}\r\n\r\n.daterangepicker.drop-up {\r\n  margin-top: -7px;\r\n}\r\n\r\n.daterangepicker.drop-up:before {\r\n  top: initial;\r\n  bottom: -7px;\r\n  border-bottom: initial;\r\n  border-top: 7px solid #ccc;\r\n}\r\n\r\n.daterangepicker.drop-up:after {\r\n  top: initial;\r\n  bottom: -6px;\r\n  border-bottom: initial;\r\n  border-top: 6px solid #fff;\r\n}\r\n\r\n.daterangepicker.single .daterangepicker .ranges, .daterangepicker.single .drp-calendar {\r\n  float: none;\r\n}\r\n\r\n.daterangepicker.single .drp-selected {\r\n  display: none;\r\n}\r\n\r\n.daterangepicker.show-calendar .drp-calendar {\r\n  display: block;\r\n}\r\n\r\n.daterangepicker.show-calendar .drp-buttons {\r\n  display: block;\r\n}\r\n\r\n.daterangepicker.auto-apply .drp-buttons {\r\n  display: none;\r\n}\r\n\r\n.daterangepicker .drp-calendar {\r\n  display: none;\r\n  max-width: 270px;\r\n}\r\n\r\n.daterangepicker .drp-calendar.left {\r\n  padding: 8px 0 8px 8px;\r\n}\r\n\r\n.daterangepicker .drp-calendar.right {\r\n  padding: 8px;\r\n}\r\n\r\n.daterangepicker .drp-calendar.single .calendar-table {\r\n  border: none;\r\n}\r\n\r\n.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {\r\n  color: #fff;\r\n  border: solid black;\r\n  border-width: 0 2px 2px 0;\r\n  border-radius: 0;\r\n  display: inline-block;\r\n  padding: 3px;\r\n}\r\n\r\n.daterangepicker .calendar-table .next span {\r\n  transform: rotate(-45deg);\r\n  -webkit-transform: rotate(-45deg);\r\n}\r\n\r\n.daterangepicker .calendar-table .prev span {\r\n  transform: rotate(135deg);\r\n  -webkit-transform: rotate(135deg);\r\n}\r\n\r\n.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {\r\n  white-space: nowrap;\r\n  text-align: center;\r\n  vertical-align: middle;\r\n  min-width: 32px;\r\n  width: 32px;\r\n  height: 24px;\r\n  line-height: 24px;\r\n  font-size: 12px;\r\n  border-radius: 4px;\r\n  border: 1px solid transparent;\r\n  white-space: nowrap;\r\n  cursor: pointer;\r\n}\r\n\r\n.daterangepicker .calendar-table {\r\n  border: 1px solid #fff;\r\n  border-radius: 4px;\r\n  background-color: #fff;\r\n}\r\n\r\n.daterangepicker .calendar-table table {\r\n  width: 100%;\r\n  margin: 0;\r\n  border-spacing: 0;\r\n  border-collapse: collapse;\r\n}\r\n\r\n.daterangepicker td.available:hover, .daterangepicker th.available:hover {\r\n  background-color: #eee;\r\n  border-color: transparent;\r\n  color: inherit;\r\n}\r\n\r\n.daterangepicker td.week, .daterangepicker th.week {\r\n  font-size: 80%;\r\n  color: #ccc;\r\n}\r\n\r\n.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {\r\n  background-color: #fff;\r\n  border-color: transparent;\r\n  color: #999;\r\n}\r\n\r\n.daterangepicker td.in-range {\r\n  background-color: #ebf4f8;\r\n  border-color: transparent;\r\n  color: #000;\r\n  border-radius: 0;\r\n}\r\n\r\n.daterangepicker td.start-date {\r\n  border-radius: 4px 0 0 4px;\r\n}\r\n\r\n.daterangepicker td.end-date {\r\n  border-radius: 0 4px 4px 0;\r\n}\r\n\r\n.daterangepicker td.start-date.end-date {\r\n  border-radius: 4px;\r\n}\r\n\r\n.daterangepicker td.active, .daterangepicker td.active:hover {\r\n  background-color: #357ebd;\r\n  border-color: transparent;\r\n  color: #fff;\r\n}\r\n\r\n.daterangepicker th.month {\r\n  width: auto;\r\n}\r\n\r\n.daterangepicker td.disabled, .daterangepicker option.disabled {\r\n  color: #999;\r\n  cursor: not-allowed;\r\n  text-decoration: line-through;\r\n}\r\n\r\n.daterangepicker select.monthselect, .daterangepicker select.yearselect {\r\n  font-size: 12px;\r\n  padding: 1px;\r\n  height: auto;\r\n  margin: 0;\r\n  cursor: default;\r\n}\r\n\r\n.daterangepicker select.monthselect {\r\n  margin-right: 2%;\r\n  width: 56%;\r\n}\r\n\r\n.daterangepicker select.yearselect {\r\n  width: 40%;\r\n}\r\n\r\n.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {\r\n  width: 50px;\r\n  margin: 0 auto;\r\n  background: #eee;\r\n  border: 1px solid #eee;\r\n  padding: 2px;\r\n  outline: 0;\r\n  font-size: 12px;\r\n}\r\n\r\n.daterangepicker .calendar-time {\r\n  text-align: center;\r\n  margin: 4px auto 0 auto;\r\n  line-height: 30px;\r\n  position: relative;\r\n}\r\n\r\n.daterangepicker .calendar-time select.disabled {\r\n  color: #ccc;\r\n  cursor: not-allowed;\r\n}\r\n\r\n.daterangepicker .drp-buttons {\r\n  clear: both;\r\n  text-align: right;\r\n  padding: 8px;\r\n  border-top: 1px solid #ddd;\r\n  display: none;\r\n  line-height: 12px;\r\n  vertical-align: middle;\r\n}\r\n\r\n.daterangepicker .drp-selected {\r\n  display: inline-block;\r\n  font-size: 12px;\r\n  padding-right: 8px;\r\n}\r\n\r\n.daterangepicker .drp-buttons .btn {\r\n  margin-left: 8px;\r\n  font-size: 12px;\r\n  font-weight: bold;\r\n  padding: 4px 8px;\r\n}\r\n\r\n.daterangepicker.show-ranges.single.rtl .drp-calendar.left {\r\n  border-right: 1px solid #ddd;\r\n}\r\n\r\n.daterangepicker.show-ranges.single.ltr .drp-calendar.left {\r\n  border-left: 1px solid #ddd;\r\n}\r\n\r\n.daterangepicker.show-ranges.rtl .drp-calendar.right {\r\n  border-right: 1px solid #ddd;\r\n}\r\n\r\n.daterangepicker.show-ranges.ltr .drp-calendar.left {\r\n  border-left: 1px solid #ddd;\r\n}\r\n\r\n.daterangepicker .ranges {\r\n  float: none;\r\n  text-align: left;\r\n  margin: 0;\r\n}\r\n\r\n.daterangepicker.show-calendar .ranges {\r\n  margin-top: 8px;\r\n}\r\n\r\n.daterangepicker .ranges ul {\r\n  list-style: none;\r\n  margin: 0 auto;\r\n  padding: 0;\r\n  width: 100%;\r\n}\r\n\r\n.daterangepicker .ranges li {\r\n  font-size: 12px;\r\n  padding: 8px 12px;\r\n  cursor: pointer;\r\n}\r\n\r\n.daterangepicker .ranges li:hover {\r\n  background-color: #eee;\r\n}\r\n\r\n.daterangepicker .ranges li.active {\r\n  background-color: #08c;\r\n  color: #fff;\r\n}\r\n\r\n/*  Larger Screen Styling */\r\n@media (min-width: 564px) {\r\n  .daterangepicker {\r\n    width: auto;\r\n  }\r\n\r\n  .daterangepicker .ranges ul {\r\n    width: 140px;\r\n  }\r\n\r\n  .daterangepicker.single .ranges ul {\r\n    width: 100%;\r\n  }\r\n\r\n  .daterangepicker.single .drp-calendar.left {\r\n    clear: none;\r\n  }\r\n\r\n  .daterangepicker.single .ranges, .daterangepicker.single .drp-calendar {\r\n    float: left;\r\n  }\r\n\r\n  .daterangepicker {\r\n    direction: ltr;\r\n    text-align: left;\r\n  }\r\n\r\n  .daterangepicker .drp-calendar.left {\r\n    clear: left;\r\n    margin-right: 0;\r\n  }\r\n\r\n  .daterangepicker .drp-calendar.left .calendar-table {\r\n    border-right: none;\r\n    border-top-right-radius: 0;\r\n    border-bottom-right-radius: 0;\r\n  }\r\n\r\n  .daterangepicker .drp-calendar.right {\r\n    margin-left: 0;\r\n  }\r\n\r\n  .daterangepicker .drp-calendar.right .calendar-table {\r\n    border-left: none;\r\n    border-top-left-radius: 0;\r\n    border-bottom-left-radius: 0;\r\n  }\r\n\r\n  .daterangepicker .drp-calendar.left .calendar-table {\r\n    padding-right: 8px;\r\n  }\r\n\r\n  .daterangepicker .ranges, .daterangepicker .drp-calendar {\r\n    float: left;\r\n  }\r\n}\r\n\r\n@media (min-width: 730px) {\r\n  .daterangepicker .ranges {\r\n    width: auto;\r\n  }\r\n\r\n  .daterangepicker .ranges {\r\n    float: left;\r\n  }\r\n\r\n  .daterangepicker.rtl .ranges {\r\n    float: right;\r\n  }\r\n\r\n  .daterangepicker .drp-calendar.left {\r\n    clear: none !important;\r\n  }\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.github-corner:hover .octo-arm[data-v-c60f0946] {\n  -webkit-animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n          animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n}\n@-webkit-keyframes octocat-wave-data-v-c60f0946 {\n0%,\n  100% {\n    transform: rotate(0);\n}\n20%,\n  60% {\n    transform: rotate(-25deg);\n}\n40%,\n  80% {\n    transform: rotate(10deg);\n}\n}\n@keyframes octocat-wave-data-v-c60f0946 {\n0%,\n  100% {\n    transform: rotate(0);\n}\n20%,\n  60% {\n    transform: rotate(-25deg);\n}\n40%,\n  80% {\n    transform: rotate(10deg);\n}\n}\n@media (max-width: 500px) {\n.github-corner:hover .octo-arm[data-v-c60f0946] {\n    -webkit-animation: none;\n            animation: none;\n}\n.github-corner .octo-arm[data-v-c60f0946] {\n    -webkit-animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n            animation: octocat-wave-data-v-c60f0946 560ms ease-in-out;\n}\n}\n", ""]);
 
 // exports
 
@@ -64488,6 +64533,36 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -93690,10 +93765,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Zips.vue?vue&type=template&id=c60f0946& ***!
-  \*******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -93907,7 +93982,63 @@ var render = function() {
         ],
         1
       )
-    ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "a",
+      {
+        staticClass: "github-corner",
+        attrs: {
+          href: "https://github.com/jamiemccarville/tixbee-zips-project",
+          "aria-label": "View source on GitHub"
+        }
+      },
+      [
+        _c(
+          "svg",
+          {
+            staticStyle: {
+              fill: "#fff",
+              color: "#ff6200",
+              position: "absolute",
+              top: "0",
+              border: "0",
+              right: "0"
+            },
+            attrs: {
+              width: "80",
+              height: "80",
+              viewBox: "0 0 250 250",
+              "aria-hidden": "true"
+            }
+          },
+          [
+            _c("path", {
+              attrs: { d: "M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              staticClass: "octo-arm",
+              staticStyle: { "transform-origin": "130px 106px" },
+              attrs: {
+                d:
+                  "M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2",
+                fill: "currentColor"
+              }
+            }),
+            _vm._v(" "),
+            _c("path", {
+              staticClass: "octo-body",
+              attrs: {
+                d:
+                  "M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z",
+                fill: "currentColor"
+              }
+            })
+          ]
+        )
+      ]
+    )
   ])
 }
 var staticRenderFns = []
@@ -118580,9 +118711,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Zips_vue_vue_type_template_id_c60f0946___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Zips.vue?vue&type=template&id=c60f0946& */ "./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&");
+/* harmony import */ var _Zips_vue_vue_type_template_id_c60f0946_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Zips.vue?vue&type=template&id=c60f0946&scoped=true& */ "./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&scoped=true&");
 /* harmony import */ var _Zips_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Zips.vue?vue&type=script&lang=js& */ "./resources/js/components/Zips.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Zips_vue_vue_type_style_index_0_id_c60f0946_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css& */ "./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -118590,13 +118723,13 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Zips_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Zips_vue_vue_type_template_id_c60f0946___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Zips_vue_vue_type_template_id_c60f0946___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Zips_vue_vue_type_template_id_c60f0946_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Zips_vue_vue_type_template_id_c60f0946_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "c60f0946",
   null
   
 )
@@ -118622,19 +118755,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&":
-/*!*************************************************************************!*\
-  !*** ./resources/js/components/Zips.vue?vue&type=template&id=c60f0946& ***!
-  \*************************************************************************/
+/***/ "./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css& ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_style_index_0_id_c60f0946_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=style&index=0&id=c60f0946&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_style_index_0_id_c60f0946_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_style_index_0_id_c60f0946_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_style_index_0_id_c60f0946_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_style_index_0_id_c60f0946_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_style_index_0_id_c60f0946_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&scoped=true&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&scoped=true& ***!
+  \*************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_template_id_c60f0946___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Zips.vue?vue&type=template&id=c60f0946& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_template_id_c60f0946___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_template_id_c60f0946_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Zips.vue?vue&type=template&id=c60f0946&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Zips.vue?vue&type=template&id=c60f0946&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_template_id_c60f0946_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_template_id_c60f0946___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Zips_vue_vue_type_template_id_c60f0946_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -118658,8 +118807,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/jamiemccarville/coding/projects/008-tixbee/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/jamiemccarville/coding/projects/008-tixbee/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/jamiemccarville/coding/projects/008-tixbee-zips-project/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/jamiemccarville/coding/projects/008-tixbee-zips-project/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
